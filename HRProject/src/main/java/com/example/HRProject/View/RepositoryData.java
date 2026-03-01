@@ -15,7 +15,7 @@ public interface RepositoryData extends JpaRepository<HRDataEntity, Integer> {
 
     @Query(value = "SELECT  * FROM employee where employeenumber =:employeenumber", nativeQuery = true)
     Optional<HRDataEntity> findByEmployeenumber(@Param("employeenumber") Integer employeenumber);
-    
+
 
     @Query(value = "SELECT  * FROM employee  where department=:department ", nativeQuery = true)
     List<Optional<HRDataEntity>> findByDepartment(@Param("department") String department);

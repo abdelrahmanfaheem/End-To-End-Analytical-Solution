@@ -16,4 +16,4 @@ def creat_all_tables () :
     # Base.metadata.drop_all(engine)
     Base.metadata.create_all(engine)
 
-    print("All tables created successfully ✅")
+    print("All tables created successfully  ")
