@@ -12,7 +12,7 @@ def get_connection(database):
         server = r'DESKTOP-HVROBDM\SQLEXPRESS'
         database = database 
         username = 'MyUser'
-        password = '1022000'
+        password = 'MyUser'
 
         engine = create_engine(
             f"mssql+pyodbc://{username}:{password}@{server}/{database}"
